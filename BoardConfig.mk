@@ -23,10 +23,6 @@ include device/google/wahoo/BoardConfig.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
-BOARD_EXT4_SHARE_DUP_BLOCKS := true
-
-# sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
 # Kernel modules
 ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
