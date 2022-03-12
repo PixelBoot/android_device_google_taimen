@@ -15,7 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_taimen.mk \
+    $(LOCAL_DIR)/pixel_taimen.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosp_taimen-userdebug
+    pixel_taimen-user \
+    pixel_taimen-userdebug
