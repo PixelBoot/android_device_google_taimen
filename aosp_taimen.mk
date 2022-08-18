@@ -30,23 +30,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 # Inherit product speciifc makefiles
 $(call inherit-product, device/google/taimen/device.mk)
 $(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_taimen
 PRODUCT_DEVICE := taimen
-PRODUCT_MODEL := Pixel 2 XL
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=taimen \
-    PRIVATE_BUILD_DESC="taimen-user 11 RP1A.201005.004.A1 6934943 release-keys"
-
-BUILD_FINGERPRINT := google/taimen/taimen:11/RP1A.201005.004.A1/6934943:user/release-keys
+PRODUCT_MODEL := AOSP on taimen
