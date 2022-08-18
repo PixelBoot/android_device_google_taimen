@@ -29,7 +29,7 @@ BOARD_AVB_ENABLE := true
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
 # sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
+#BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
 
